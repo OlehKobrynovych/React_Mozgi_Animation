@@ -6,10 +6,12 @@ import { useRef, useEffect } from "react";
 import './WherePage.css';
 
 function WherePage() {
+
   let screen = useRef(null);
   let body = useRef(null);
+
   useEffect(() => {
-    var tl = new TimelineMax();
+    let tl = new TimelineMax();
     tl.to(screen, {
       duration: 1.2,
       width: "100%",
@@ -34,7 +36,8 @@ function WherePage() {
         pointerEvents: 'none'
       }});
   }
-  });
+  }, []);
+
   return (
     <div className="where-page">
       <div className="load-container">

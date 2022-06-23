@@ -35,19 +35,22 @@
 }
 
 .where-page__link-left {
-    left: 19px;
+    /* left: 19px; */
+    left: 0px;
     top: 50%;
     transform: rotate(-90deg) translateY(-50%);
 }
 
 .where-page__link-right {
-    right: 19px;
+    /* right: 19px; */
+    right: 0px;
     top: 50%;
     transform: rotate(90deg) translateY(-50%);
 }
 
 .where-page__link-bottom {
-    bottom: 19px;
+    /* bottom: 19px; */
+    bottom: 0px;
     left: 50%;
     transform: translateY(-50%);
 }

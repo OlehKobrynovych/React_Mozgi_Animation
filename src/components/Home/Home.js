@@ -1,16 +1,20 @@
-import React from "react";
 // import { NavLink } from "react-router-dom";
 import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
-import { useRef, useEffect } from "react";
 
 import './Home.css';
+import TextDiagonal from "../TextDiagonal/TextDiagonal";
+import BtnRotation from "../BtnRotation/BtnRotation";
 
+import { useRef, useState, useEffect } from "react";
+import TitleRotation from "../TitleRotation/TitleRotation";
 
 function Home() {
+
   let screen = useRef(null);
   let body = useRef(null);
-  useEffect(() => {
-    var tl = new TimelineMax();
+  
+  useEffect(() => {                      // TODO: route louder
+    let tl = new TimelineMax();
     tl.to(screen, {
       duration: 1.2,
       height: "100%",
@@ -36,14 +40,18 @@ function Home() {
   }
   });
   return (
-    <div className="home">
+    <div className="home" >
       <div className="load-container">
         <div className="load-screen1" ref={(el) => (screen = el)}>
         </div>
       </div>
       <div data-barba="container" >
         <div ref={(el) => (body = el)} className="load-head" >
-          <div className="home__title">Welcome to Home!!!</div>
+          {/* <TextDiagonal /> */}
+          <BtnRotation />
+          
+          <TitleRotation />
+        
         </div>
       </div>
     </div>

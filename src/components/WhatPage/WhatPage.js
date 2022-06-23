@@ -6,10 +6,12 @@ import { useRef, useEffect } from "react";
 import './WhatPage.css';
 
 function WhatPage() {
+
   let screen = useRef(null);
   let body = useRef(null);
+
   useEffect(() => {
-    var tl = new TimelineMax();
+    let tl = new TimelineMax();
     tl.to(screen, {
       duration: 1.2,
       width: "100%",
@@ -34,7 +36,8 @@ function WhatPage() {
         pointerEvents: 'none'
       }});
   }
-  });
+  }, []);
+
   return (
     <div className="what-page">
       <div className="load-container">
