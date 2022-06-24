@@ -1,24 +1,24 @@
-.text-diagonal {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    transform: rotate(-45deg);
-    transform-origin: top left ;
-    width: 150%;
-    transition: all .3s;
-    overflow: hidden;
-}
+.text-diagonal {  
+    position: fixed;  
+    top: 100%; 
+    left: 0; 
+    transform: rotate(-45deg) translate(0%, -50%); 
+    transform-origin: top left;  
+    width: 250%;  
+    transition: all .3s;  
+    overflow: hidden;  
+  }
 
 .text-diagonal__top {
    display: flex;
    width: 160%;
-   animation: diagonal-anim-right 8s linear infinite;
+   animation: diagonal-anim-right 25s linear infinite;
 }
 
 .text-diagonal__bottom {
    display: flex;
    width: 160%;
-   animation: diagonal-anim-left 8s linear infinite;
+   animation: diagonal-anim-left 25s linear infinite;
 }
 
 .text-diagonal__text {

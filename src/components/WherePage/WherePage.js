@@ -44,14 +44,14 @@ function WherePage() {
 
     return (
         <div className="where-page">
-        <div className="load-container">
-            <div className="load-screen" ref={(el) => (screen = el)}></div>
-        </div>
-        <div data-barba="container" >
-            <div ref={(el) => (body = el)} className="load-head">
-            <div className="where-page__title">Where?</div>
+            <div className="load-container">
+                <div className="load-screen" ref={(el) => (screen = el)}></div>
             </div>
-        </div>
+            <div data-barba="container" >
+                <div ref={(el) => (body = el)} className="load-head">
+                    <div className="where-page__title">Where?</div>
+                </div>
+            </div>
         </div>
     );
 }
