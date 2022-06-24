@@ -45,7 +45,7 @@ function WhoPage() {
       </div>
       <div data-barba="container">
         <div ref={(el) => (body = el)} className="load-head">
-          <div className="who-page__title">WhoPage!</div>
+          <div className="who-page__title">Who?</div>
         </div>
       </div>
     </div>

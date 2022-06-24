@@ -1,45 +1,65 @@
 .btn-rotation {
-  position: absolute;
-  top: 63%;
-  left: 63%;
-  max-width: 100%; 
-  width: 115px; 
-  height: auto; 
-  /* animation-name: rotate;  */
-  animation-name: rotate; 
-  animation-duration: 5s; 
-  animation-iteration-count: infinite; 
-  animation-timing-function: linear; 
-  animation-play-state: paused; 
-  /* rotate: paused;  */
-  z-index: 3;
+    position: absolute;
+    top: 63%;
+    left: 60%;
+    max-width: 100%; 
+    width: 87px; 
+    height: auto; 
+    animation-name: rotate; 
+    animation-duration: 5s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear; 
+    animation-play-state: paused; 
+    z-index: 3;
 }
 
 .btn-rotation:hover {
-  /* rotate: running; */ 
-  animation-play-state: running; 
+    animation-play-state: running; 
 }
 
-.btn-rotation__text {
-  font-size: 80px;
+.btn-rotation__svg {
+    width: 100%;
 }
  
 @keyframes rotate{ 
-  from{ transform: rotate(360deg); } 
-  to{ transform: rotate(-360deg); } 
+    from{ transform: rotate(360deg); } 
+    to{ transform: rotate(-360deg); } 
 }
 
 .btn-rotation__body {
-  position: relative;
+    position: relative;
 }
 
 .btn-rotation__center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+@media (min-width: 576px) {
+    .btn-rotation {
+        width: 109px;
+        top: 73%;
+        left: 61%;
+    }
+}
+
+@media (min-width: 768px) {
+ 
+}
+
+@media (min-width: 992px) {
+ 
+}
+
+@media (min-width: 1200px) {
+    .btn-rotation {
+        width: 115px;
+        top: 70%;
+    }
 }

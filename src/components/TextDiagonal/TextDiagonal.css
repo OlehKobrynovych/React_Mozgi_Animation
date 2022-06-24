@@ -1,49 +1,59 @@
 .text-diagonal {
-    /* position: relative; */
-    position: absolute;
-    bottom: 30px;
-    display: block;
-    width: 100%;
-    font-size: 2em;
-    animation-duration: 5s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    /* animation-name: anim-1; */
+    position: fixed;
+    bottom: 0;
+    left: 0;
     transform: rotate(-45deg);
-    background-color: red;
+    transform-origin: top left ;
+    width: 150%;
+    transition: all .3s;
+    overflow: hidden;
 }
-/* .text-diagonal {
-    position: relative;
-    font-family: 'Grtsk Giga';
+
+.text-diagonal__top {
+   display: flex;
+   width: 160%;
+   animation: diagonal-anim-right 8s linear infinite;
+}
+
+.text-diagonal__bottom {
+   display: flex;
+   width: 160%;
+   animation: diagonal-anim-left 8s linear infinite;
+}
+
+.text-diagonal__text {
+    white-space: nowrap;
+    width: 100%;
     font-style: italic;
     font-weight: 700;
     font-size: 52px;
     line-height: 110%;
     text-align: center;
     text-transform: uppercase;
-    opacity: 0.1;
-    overflow: hidden;
-} */
+    /* color: #BEBEBE; */
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    -webkit-text-stroke: 1px rgba(55, 55, 55, .2);         
+    color: transparent;
+}
 
-/* .text-diagonal__top {
-    position: absolute;
-    display: block;
-    top: 2em;
-    width: 100%;
-    font-size: 2em;
-    animation-duration: 5s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-name: anim-1;
-} */
+@keyframes diagonal-anim-right {
 
-/* @keyframes anim-1 {
-    0%, 8.3% { left: -100%; opacity: 0; }
-    8.3%,25% { left: 25%; opacity: 1; }
-    33.33%, 100% { left: 110%; opacity: 0; }
-  } */
-@keyframes anim-1 {
-    0% { left: -100%; opacity: 1; }
-    /* 8.3%,25% { left: 25%; opacity: 1; } */
-    100% { left: 100%; opacity: 1; }
-  }
+    0% {
+		transform: translateX(-50%);
+	}
+
+	100% {
+		transform: translateX(0%);
+	}
+}
+ 
+@keyframes diagonal-anim-left {
+
+	0% {
+		transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(-50%);
+	}
+}
