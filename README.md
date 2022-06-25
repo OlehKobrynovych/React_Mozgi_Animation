@@ -35,7 +35,7 @@ This is a simple react app using public [`React-spring/web`](https://www.npmjs.c
 
 ## Technologies
 Project uses:
-* React (useState, useEffect)
+* React (useState, useEffect, useRef)
 * React-router (useNavigate)
 * React-spring/web
 * Gsap

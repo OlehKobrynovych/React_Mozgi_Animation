@@ -23,7 +23,6 @@
 }
 
 .title-rotation__title {
-    font-style: normal;
     font-weight: 700;
     font-size: 34px;
     line-height: 110%;
@@ -46,10 +45,6 @@
     .title-rotation__title {
         font-size: 58px;
     }
-}
-
-@media (min-width: 992px) {
-
 }
 
 @media (min-width: 1200px) {

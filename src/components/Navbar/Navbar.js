@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import { NavLink, useNavigate } from "react-router-dom";
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
@@ -7,7 +7,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import './Navbar.css';
 
 function Navbar() {
-    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [anchorEl, setAnchorEl] = useState(null);
     const navigate = useNavigate();
 
     const handleClick = (event) => {
