@@ -101,24 +101,21 @@
 }
 
 .navbar__link-left {
-    left: 0px;
+    left: 0;
     top: 50%;
-    transform: rotate(-90deg) translateY(-50%);
-    padding-top: .9rem;
+    transform: rotate(-90deg) translateY(-20px);
 }
 
 .navbar__link-right {
-    right: 0px;
+    right: 0;
     top: 50%;
-    transform: rotate(90deg) translateY(-50%);
-    padding-top: .9rem;
+    transform: rotate(90deg) translateY(-10px);
 }
 
 .navbar__link-bottom {
-    bottom: 0px;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    padding-bottom: .9rem;
 }
 
 .navbar__menu-mob {
