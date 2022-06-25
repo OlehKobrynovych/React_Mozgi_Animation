@@ -38,4 +38,5 @@ Project uses:
 * React (useState, useEffect)
 * React-router (useNavigate)
 * React-spring/web
+* Gsap
 * Material UI

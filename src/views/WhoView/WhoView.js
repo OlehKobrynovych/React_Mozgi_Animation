@@ -1,16 +1,15 @@
 import { useRef, useEffect } from "react";
 import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
 
-import './WherePage.css';
+import './WhoView.css';
 
-function WherePage() {
+function WhoView() {
     let screen = useRef(null);
     let body = useRef(null);
 
     useEffect(() => {
         let tl = new TimelineMax();
-
-        tl.to(screen, {
+            tl.to(screen, {
             duration: 1.2,
             width: "100%",
             left: "0%",
@@ -36,22 +35,22 @@ function WherePage() {
             TweenMax.to(body, 1, {css: {
                 opacity: "0",
                 pointerEvents: 'none'
-        }});
-    }
+            }});
+        }
     }, []);
 
     return (
-        <div className="where-page">
+        <div className="who-view">
             <div className="load-container">
                 <div className="load-screen" ref={(el) => (screen = el)}></div>
             </div>
-            <div data-barba="container" >
+            <div data-barba="container">
                 <div ref={(el) => (body = el)} className="load-head">
-                    <div className="where-page__title">Where?</div>
+                    <div className="who-view__title">Who?</div>
                 </div>
             </div>
         </div>
     );
 }
 
-export default WherePage;
+export default WhoView;

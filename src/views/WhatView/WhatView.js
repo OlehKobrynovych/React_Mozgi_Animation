@@ -1,15 +1,16 @@
 import { useRef, useEffect } from "react";
 import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
 
-import './WhoPage.css';
+import './WhatView.css';
 
-function WhoPage() {
+function WhatView() {
     let screen = useRef(null);
     let body = useRef(null);
 
     useEffect(() => {
         let tl = new TimelineMax();
-            tl.to(screen, {
+
+        tl.to(screen, {
             duration: 1.2,
             width: "100%",
             left: "0%",
@@ -24,7 +25,7 @@ function WhoPage() {
         });
 
         tl.set(screen, { left: "-100%" });
-
+        
         TweenMax.to(body, .3, {css: {
             opacity: "1",
             pointerEvents: "auto",
@@ -40,17 +41,17 @@ function WhoPage() {
     }, []);
 
     return (
-        <div className="who-page">
+        <div className="what-view">
             <div className="load-container">
                 <div className="load-screen" ref={(el) => (screen = el)}></div>
             </div>
             <div data-barba="container">
                 <div ref={(el) => (body = el)} className="load-head">
-                    <div className="who-page__title">Who?</div>
+                    <div className="what-view__title">What?</div>
                 </div>
             </div>
         </div>
     );
 }
 
-export default WhoPage;
+export default WhatView;

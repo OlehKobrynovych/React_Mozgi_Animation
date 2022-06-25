@@ -1,9 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
 
-import './WhatPage.css';
+import './WhereView.css';
 
-function WhatPage() {
+function WhereView() {
     let screen = useRef(null);
     let body = useRef(null);
 
@@ -25,7 +25,7 @@ function WhatPage() {
         });
 
         tl.set(screen, { left: "-100%" });
-        
+
         TweenMax.to(body, .3, {css: {
             opacity: "1",
             pointerEvents: "auto",
@@ -36,22 +36,22 @@ function WhatPage() {
             TweenMax.to(body, 1, {css: {
                 opacity: "0",
                 pointerEvents: 'none'
-            }});
-        }
+        }});
+    }
     }, []);
 
     return (
-        <div className="what-page">
+        <div className="where-view">
             <div className="load-container">
                 <div className="load-screen" ref={(el) => (screen = el)}></div>
             </div>
-            <div data-barba="container">
+            <div data-barba="container" >
                 <div ref={(el) => (body = el)} className="load-head">
-                    <div className="what-page__title">What?</div>
+                    <div className="where-view__title">Where?</div>
                 </div>
             </div>
         </div>
     );
 }
 
-export default WhatPage;
+export default WhereView;

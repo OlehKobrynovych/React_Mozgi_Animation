@@ -1,12 +1,12 @@
 import { useRef, useEffect } from "react";
 import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
-import TitleRotation from "../TitleRotation/TitleRotation";
-import TextDiagonal from "../TextDiagonal/TextDiagonal";
-import BtnRotation from "../BtnRotation/BtnRotation";
+import TitleRotation from "../../components/TitleRotation/TitleRotation";
+import TextDiagonal from "../../components/TextDiagonal/TextDiagonal";
+import BtnRotation from "../../components/BtnRotation/BtnRotation";
 
-import './Home.css';
+import './HomeView.css';
 
-function Home() {
+function HomeView() {
     let screen = useRef(null);
     let body = useRef(null);
   
@@ -43,7 +43,7 @@ function Home() {
     });
 
     return (
-        <div className="home" data-barba="container">
+        <div className="home-view" data-barba="container">
             <div className="load-container">
                 <div className="load-screen1" ref={(el) => (screen = el)}>
                 </div>
@@ -62,4 +62,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default HomeView;

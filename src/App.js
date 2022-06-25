@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home/Home';
-import WherePage from './components/WherePage/WherePage';
-import WhoPage from './components/WhoPage/WhoPage';
-import WhatPage from './components/WhatPage/WhatPage';
+import HomeView from "./views/HomeView/HomeView";
+import WhereView from "./views/WhereView/WhereView";
+import WhoView from "./views/WhoView/WhoView";
+import WhatView from "./views/WhatView/WhatView";
 
 import './App.css';
 
@@ -12,10 +12,10 @@ function App() {
         <div className="App">
             <Navbar />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="Where" element={<WherePage />} />
-                <Route path="What" element={<WhatPage />} />
-                <Route path="Who" element={<WhoPage />} />
+                <Route path="/" element={<HomeView />} />
+                <Route path="Where" element={<WhereView />} />
+                <Route path="What" element={<WhatView />} />
+                <Route path="Who" element={<WhoView />} />
             </Routes>
         </div>
     );
