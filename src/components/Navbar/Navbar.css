@@ -25,7 +25,6 @@
 
 .navbar__lang:hover .navbar__lang-btns{
    width: 100px;
-   padding-left: 20px;
 }
 
 .navbar__lang-menu {
@@ -50,6 +49,7 @@
 }
 
 .navbar__lang-btn {
+    width: 100%;
     font-size: 16px;
     font-weight: 700;
     line-height: 140%;
@@ -104,18 +104,21 @@
     left: 0px;
     top: 50%;
     transform: rotate(-90deg) translateY(-50%);
+    padding-top: .9rem;
 }
 
 .navbar__link-right {
     right: 0px;
     top: 50%;
     transform: rotate(90deg) translateY(-50%);
+    padding-top: .9rem;
 }
 
 .navbar__link-bottom {
     bottom: 0px;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
+    padding-bottom: .9rem;
 }
 
 .navbar__menu-mob {

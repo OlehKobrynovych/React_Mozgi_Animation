@@ -1,16 +1,13 @@
-import React from "react";
-import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
 import { useRef, useEffect } from "react";
+import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
 
 import './WherePage.css';
 
 function WherePage() {
-
     let screen = useRef(null);
     let body = useRef(null);
 
     useEffect(() => {
-
         let tl = new TimelineMax();
 
         tl.to(screen, {
@@ -28,7 +25,8 @@ function WherePage() {
         });
 
         tl.set(screen, { left: "-100%" });
-            TweenMax.to(body, .3, {css: {
+
+        TweenMax.to(body, .3, {css: {
             opacity: "1",
             pointerEvents: "auto",
             ease: Power4.easeInOut

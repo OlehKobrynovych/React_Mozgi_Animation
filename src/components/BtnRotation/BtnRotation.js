@@ -1,7 +1,6 @@
 import './BtnRotation.css';
 
 function BtnRotation() {
-
     return (
         <div className="btn-rotation">
             <div className="btn-rotation__body">

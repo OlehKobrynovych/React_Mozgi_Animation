@@ -11,6 +11,7 @@
     animation-timing-function: linear; 
     animation-play-state: paused; 
     z-index: 3;
+    cursor: pointer;
 }
 
 .btn-rotation:hover {
@@ -22,8 +23,8 @@
 }
  
 @keyframes rotate{ 
-    from{ transform: rotate(360deg); } 
-    to{ transform: rotate(-360deg); } 
+    from { transform: rotate(360deg); } 
+    to { transform: rotate(-360deg); } 
 }
 
 .btn-rotation__body {
@@ -47,14 +48,6 @@
         top: 73%;
         left: 61%;
     }
-}
-
-@media (min-width: 768px) {
- 
-}
-
-@media (min-width: 992px) {
- 
 }
 
 @media (min-width: 1200px) {

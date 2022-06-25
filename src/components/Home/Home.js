@@ -1,14 +1,12 @@
+import { useRef, useEffect } from "react";
 import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
-
-import './Home.css';
+import TitleRotation from "../TitleRotation/TitleRotation";
 import TextDiagonal from "../TextDiagonal/TextDiagonal";
 import BtnRotation from "../BtnRotation/BtnRotation";
 
-import { useRef, useEffect } from "react";
-import TitleRotation from "../TitleRotation/TitleRotation";
+import './Home.css';
 
 function Home() {
-
     let screen = useRef(null);
     let body = useRef(null);
   
@@ -29,6 +27,7 @@ function Home() {
         });
 
         tl.set(screen, { left: "-100%" });
+
         TweenMax.to(body, .3, {css: {
             opacity: "1",
             pointerEvents: "auto",
@@ -44,8 +43,7 @@ function Home() {
     });
 
     return (
-        <div className="home" >
-
+        <div className="home" data-barba="container">
             <div className="load-container">
                 <div className="load-screen1" ref={(el) => (screen = el)}>
                 </div>
@@ -53,16 +51,13 @@ function Home() {
 
             <div data-barba="container" >
                 <div ref={(el) => (body = el)} className="load-head" >
-
                     <TextDiagonal />
 
                     <BtnRotation />
                     
                     <TitleRotation />
-                
                 </div>
             </div>
-            
         </div>
     );
 }

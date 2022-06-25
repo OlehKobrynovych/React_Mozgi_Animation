@@ -4,7 +4,6 @@ import { useSpring, animated } from "@react-spring/web";
 import './TitleRotation.css';
 
 function TitleRotation() {
-
     const calc = (x, y, rect) => [                    
         -(y - rect.top - rect.height / 2) / 35,
         (x - rect.left - rect.width / 2) / 35,
@@ -29,7 +28,6 @@ function TitleRotation() {
     const props = useSpring({ xys, config });
   
     return (
-
         <div 
             className="title-rotation" 
             ref={ref} 

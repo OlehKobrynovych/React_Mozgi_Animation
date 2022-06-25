@@ -1,15 +1,15 @@
-import './App.css';
-
 import { Routes, Route } from "react-router-dom";
+import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import WherePage from './components/WherePage/WherePage';
-import Navbar from './components/Navbar/Navbar';
 import WhoPage from './components/WhoPage/WhoPage';
 import WhatPage from './components/WhatPage/WhatPage';
 
+import './App.css';
+
 function App() {
     return (
-        <div className="App" data-barba="container">
+        <div className="App">
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />

@@ -1,16 +1,13 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { TweenMax, TimelineMax, Power3, Power4 } from "gsap";
-import { useRef, useEffect } from "react";
 
 import './WhatPage.css';
 
 function WhatPage() {
-
     let screen = useRef(null);
     let body = useRef(null);
 
     useEffect(() => {
-
         let tl = new TimelineMax();
 
         tl.to(screen, {
@@ -28,6 +25,7 @@ function WhatPage() {
         });
 
         tl.set(screen, { left: "-100%" });
+        
         TweenMax.to(body, .3, {css: {
             opacity: "1",
             pointerEvents: "auto",
