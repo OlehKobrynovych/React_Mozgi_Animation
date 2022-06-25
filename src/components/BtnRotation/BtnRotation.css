@@ -1,7 +1,4 @@
 .btn-rotation {
-    position: absolute;
-    top: 63%;
-    left: 60%;
     max-width: 100%; 
     width: 87px; 
     height: auto; 
@@ -45,14 +42,11 @@
 @media (min-width: 576px) {
     .btn-rotation {
         width: 109px;
-        top: 73%;
-        left: 61%;
     }
 }
 
 @media (min-width: 1200px) {
     .btn-rotation {
         width: 115px;
-        top: 70%;
     }
 }

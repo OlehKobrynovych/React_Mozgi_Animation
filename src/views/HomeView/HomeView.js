@@ -11,7 +11,13 @@ function HomeView() {
             <LayoutTransitionTop>
                 <TextDiagonal />
 
-                <BtnRotation />
+                <div className="home-view__circle-wrap">
+                    <div className="home-view__circle">
+                        <div className="home-view__circle-btn">
+                            <BtnRotation />
+                        </div>
+                    </div>
+                </div>
                 
                 <TitleRotation />
             </LayoutTransitionTop>
