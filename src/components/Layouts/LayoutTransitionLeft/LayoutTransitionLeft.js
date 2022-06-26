@@ -45,7 +45,7 @@ function LayoutTransitionLeft({children}) {
             <div className="layout-transition-left">
                 <div className="layout-transition-left__screen" ref={(el) => (screen = el)}></div>
             </div>
-            <div data-barba="container">
+            <div>
                 <div ref={(el) => (body = el)} className="layout-transition-left__head">
                     {children}
                 </div>

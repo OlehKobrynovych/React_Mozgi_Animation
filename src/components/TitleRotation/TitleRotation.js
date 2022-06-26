@@ -5,7 +5,7 @@ import './TitleRotation.css';
 
 function TitleRotation() {
     const calc = (x, y, rect) => [                    
-        -(y - rect.top - rect.height / 2) / 35,
+        -(y - rect.top - rect.height / 2) / 25,
         (x - rect.left - rect.width / 2) / 35,
         1.4
     ];
@@ -38,7 +38,6 @@ function TitleRotation() {
             }}
         >
             <animated.div
-                
                 style={{ transform: props.xys.to(trans) }}
             >
                 <h1 className="title-rotation__title">FULL-CYCLE<br/>EVENT AGENCY</h1>

@@ -7,18 +7,14 @@ import './HomeView.css';
 
 function HomeView() {
     return (
-        <main className="home-view" data-barba="container">
+        <main className="home-view">
             <LayoutTransitionTop>
                 <TextDiagonal />
 
-                <div className="home-view__circle-wrap">
-                    <div className="home-view__circle">
-                        <div className="home-view__circle-btn">
-                            <BtnRotation />
-                        </div>
-                    </div>
+                <div className="home-view__circle-btn">
+                    <BtnRotation />
                 </div>
-                
+
                 <TitleRotation />
             </LayoutTransitionTop>
         </main>

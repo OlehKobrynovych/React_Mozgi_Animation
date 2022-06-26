@@ -44,7 +44,7 @@ function LayoutTransitionTop({children}) {
             <div className="layout-transition-top">
                 <div className="layout-transition-top__screen" ref={(el) => (screen = el)}></div>
             </div>
-            <div data-barba="container">
+            <div>
                 <div ref={(el) => (body = el)} className="layout-transition-top__head">
                     {children}
                 </div>
