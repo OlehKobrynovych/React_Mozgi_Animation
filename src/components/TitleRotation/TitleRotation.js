@@ -31,7 +31,6 @@ function TitleRotation() {
         <div 
             className="title-rotation" 
             ref={ref} 
-            onMouseLeave={() => set([0, 0])}
             onMouseMove={(e) => {
                 const rect = ref.current.getBoundingClientRect();
                 set(calc(e.clientX, e.clientY, rect));
