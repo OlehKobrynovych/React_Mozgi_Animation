@@ -23,7 +23,7 @@
 @media (min-width: 576px) {
     .title-rotation__title {
         font-size: 34px;
-        padding: 70px;
+        padding: 0 70px;
     }
 }
 
