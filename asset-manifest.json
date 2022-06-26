@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React_Mozgi_Animation/static/css/main.60353c23.css",
-    "main.js": "/React_Mozgi_Animation/static/js/main.e3556c76.js",
+    "main.js": "/React_Mozgi_Animation/static/js/main.1e4b8108.js",
     "static/js/787.28cb0dcd.chunk.js": "/React_Mozgi_Animation/static/js/787.28cb0dcd.chunk.js",
     "static/media/GrtskGiga-MediumItalic.eot": "/React_Mozgi_Animation/static/media/GrtskGiga-MediumItalic.84a00facd106d2ad4075.eot",
     "static/media/GrtskGiga-MediumItalic.ttf": "/React_Mozgi_Animation/static/media/GrtskGiga-MediumItalic.4e4a8b86ea4021362487.ttf",
@@ -42,11 +42,11 @@
     "static/media/CircleBtn.svg": "/React_Mozgi_Animation/static/media/CircleBtn.7a96d8971cba49b502c2c85fe663d332.svg",
     "index.html": "/React_Mozgi_Animation/index.html",
     "main.60353c23.css.map": "/React_Mozgi_Animation/static/css/main.60353c23.css.map",
-    "main.e3556c76.js.map": "/React_Mozgi_Animation/static/js/main.e3556c76.js.map",
+    "main.1e4b8108.js.map": "/React_Mozgi_Animation/static/js/main.1e4b8108.js.map",
     "787.28cb0dcd.chunk.js.map": "/React_Mozgi_Animation/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.60353c23.css",
-    "static/js/main.e3556c76.js"
+    "static/js/main.1e4b8108.js"
   ]
 }
