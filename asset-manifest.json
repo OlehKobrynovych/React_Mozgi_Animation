@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React_Mozgi_Animation/static/css/main.183f5657.css",
+    "main.css": "/React_Mozgi_Animation/static/css/main.8b1ad709.css",
     "main.js": "/React_Mozgi_Animation/static/js/main.5531c330.js",
     "static/js/787.28cb0dcd.chunk.js": "/React_Mozgi_Animation/static/js/787.28cb0dcd.chunk.js",
     "static/media/GrtskGiga-MediumItalic.eot": "/React_Mozgi_Animation/static/media/GrtskGiga-MediumItalic.84a00facd106d2ad4075.eot",
@@ -41,12 +41,12 @@
     "static/media/GrtskGiga-Regular.woff2": "/React_Mozgi_Animation/static/media/GrtskGiga-Regular.6b7f9e2d323b0075c04d.woff2",
     "static/media/CircleBtn.svg": "/React_Mozgi_Animation/static/media/CircleBtn.7a96d8971cba49b502c2c85fe663d332.svg",
     "index.html": "/React_Mozgi_Animation/index.html",
-    "main.183f5657.css.map": "/React_Mozgi_Animation/static/css/main.183f5657.css.map",
+    "main.8b1ad709.css.map": "/React_Mozgi_Animation/static/css/main.8b1ad709.css.map",
     "main.5531c330.js.map": "/React_Mozgi_Animation/static/js/main.5531c330.js.map",
     "787.28cb0dcd.chunk.js.map": "/React_Mozgi_Animation/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.183f5657.css",
+    "static/css/main.8b1ad709.css",
     "static/js/main.5531c330.js"
   ]
 }
