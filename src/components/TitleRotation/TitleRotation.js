@@ -38,10 +38,10 @@ function TitleRotation() {
             }}
         >
             <animated.div
-                className="title-rotation__title"
+                
                 style={{ transform: props.xys.to(trans) }}
             >
-                FULL-CYCLE<br/>EVENT AGENCY
+                <h1 className="title-rotation__title">FULL-CYCLE<br/>EVENT AGENCY</h1>
             </animated.div>
         </div>
     );

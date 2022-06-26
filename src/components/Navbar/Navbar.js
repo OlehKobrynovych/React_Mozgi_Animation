@@ -24,7 +24,7 @@ function Navbar() {
     };
 
     return (
-        <div className="navbar">
+        <nav className="navbar">
             <div className='navbar__menu-mob'>
                 <Button className='navbar__mob-toggle' aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                     <div className='navbar__mob-toggle-icon'></div>
@@ -82,7 +82,7 @@ function Navbar() {
             <NavLink to="/Where" className="navbar__link navbar__link-left">Where?</NavLink>
             <NavLink to="/What" className="navbar__link navbar__link-right">What?</NavLink>
             <NavLink to="/Who" className="navbar__link navbar__link-bottom">Who?</NavLink>
-        </div>
+        </nav>
     );
 }
 

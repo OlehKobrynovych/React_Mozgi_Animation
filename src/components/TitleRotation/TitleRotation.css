@@ -17,6 +17,7 @@
     will-change: transform;
     color: #373737;
     padding: .8rem;
+    margin: 0;
 }
 
 @media (min-width: 576px) {
