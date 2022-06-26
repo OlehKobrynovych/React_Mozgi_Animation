@@ -2,7 +2,7 @@
 
 Demonstration animation project for advanced training.
 
-See life https://OlehKobrynovych.github.io/React_Mozgi_Animation
+See live https://OlehKobrynovych.github.io/React_Mozgi_Animation
 
 
 ## Table of contents
