@@ -3,11 +3,11 @@ import './WhoView.css';
 
 function WhoView() {
     return (
-        <div className="who-view">
+        <main className="who-view">
             <LayoutTransitionLeft>
                 <div className="who-view__title">Who?</div>
             </LayoutTransitionLeft>
-        </div>
+        </main>
     );
 }
 

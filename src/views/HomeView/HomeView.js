@@ -7,7 +7,7 @@ import './HomeView.css';
 
 function HomeView() {
     return (
-        <div className="home-view" data-barba="container">
+        <main className="home-view" data-barba="container">
             <LayoutTransitionTop>
                 <TextDiagonal />
 
@@ -21,7 +21,7 @@ function HomeView() {
                 
                 <TitleRotation />
             </LayoutTransitionTop>
-        </div>
+        </main>
     );
 }
 
